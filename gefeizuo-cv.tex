@@ -41,10 +41,15 @@
 % \href well..
 % \\ breaks the line into a new paragraph
 \noindent\href{mailto:alkaid@mail.ustc.edu.cn}{alkaid\mbox{}@\mbox{}mail.ustc.edu.cn}\sbull
+Room212, Building 321, East Campus, USTC\sbull
 \textsmaller{+}86.15656577795
 \\
 \noindent 3rd year Undergraduate student
-
+\\
+\\
+\textsmaller{
+	Electronic Edition can be found at \href{https://github.com/Alkaid-Benetnash/CV}{https://github.com/Alkaid-Benetnash/CV}
+}
 \spacedhrule{0.8em}{-0.8em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Education}
@@ -85,15 +90,14 @@
 
 \headedsection  % sets the header for the section and includes any subsections
 {\href{https://git.ustclug.org/boj/freeshell}{USTC Freeshell}}
-{\textsc{Univ. of Science and Tech. of China}} {%
+{\textsc{Univ. of Science and Tech. of China}} {
 	\headedsubsection
 	{Maintainer}
 	{Sept. \apo14 -- June \apo15}
 	{\bodytext{
 			\begin{itemize}
 				\item Container-based IaaS service based on OpenVZ virtualization, supporting various Linux distributions.
-				\item Shut down because of a serious attack
-				\item reconstruction with ceph and openstack working in progress
+				\item Reconstruct previous version with ceph and openstack working in progress
 			\end{itemize}
 		}}
 	}
@@ -106,15 +110,27 @@
 	{Jul. \apo15 -- present}
 	{\bodytext{
 			\begin{itemize}
-				\item One of the biggest opensourse mirror in China
-				\item Official mirror site of Debian in China
-				\item More than 6TB traffic per day, with merely one outdated machine
-				\item Test and Deploy several kinds of block cache, finally disk IO capability is improved more than twice
-				\item Dealing with many kinds of performance or software/hardware issues
+				\item One of the biggest opensourse mirror in China, Official mirror site of Debian in China
+				\item More than 6TB traffic per day, Hundreds of http connection per second,  with merely one outdated machine
+				\item Test and deploy several kinds of block cache, finally improve the disk IO capability more than twice
+				\item Deal with many kinds of performance or software/hardware issues
 			\end{itemize}
 		}}
 	}
-
+\headedsection
+{Soft Robot Lab, instructed by \href{http://ai.ustc.edu.cn/}{Xiaoping Chen}}
+{\textsc{Univ. of Science and Tech. of China}}
+{
+	\headedsubsection
+	{Participant}
+	{Sept. \apo2016 -- present}
+	{\bodytext{
+			\begin{itemize}
+				\item Build soft manipulator based on Honeycomb Pneumatic Networks
+				\item Using Neutral Network to control this soft manipulator, coding in Matlab
+			\end{itemize}	
+	}}
+}
 \headedsection  % sets the header for the section and includes any subsections
 {\href{https://github.com/zzh1996/distributed-file-storage}{Distributed File Storage}}
 {\textsc{Univ. of Science and Tech. of China}} {%
@@ -123,12 +139,11 @@
 	{Mar. \apo16 -- June \apo16}
 	{\bodytext{
 			\begin{itemize}
-			\item Implement git-like(content hash as index) file/directory indexing API for web interface(implmented by others)
-			\item Design and Implement synchronize operation based on concept of blockchain
+				\item Implement git-like(content hash as index) file/directory indexing API for web interface(implmented by others)
+				\item Design and Implement synchronize operation based on concept of blockchain
 			\end{itemize}
-		}}
-	}
-
+	}}
+}
 \spacedhrule{0.5em}{-0.8em}
 
 \roottitle{Extracurricular Activities}
@@ -152,7 +167,7 @@
 \roottitle{Skills}
 
 \inlineheadsection{Programming:}{C, Python, Verilog, Bash.}
-\inlineheadsection{Linux:}{Archlinux as desktop, Network management, Server operations and monitoring.}
+\inlineheadsection{Linux:}{Network management, Server operations and monitoring, Build ceph(distributed storage) cluster.}
 \inlineheadsection{Gitlab:}{\href{https://git.ustclug.org/Alkaid}{https://git.ustclug.org/Alkaid}}
 \inlineheadsection{Github:}{\href{https://github.com/Alkaid-Benetnash}{https://github.com/Alkaid-Benetnash}}
 
