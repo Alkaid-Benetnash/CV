@@ -31,7 +31,11 @@
 
 
 % title on top of the document
-\maintitle{Gefei Zuo}{}{Last update on \today}
+\maintitle{Gefei Zuo}{
+	\textsmaller{
+		Downloadable at \href{https://github.com/Alkaid-Benetnash/CV}{https://github.com/Alkaid-Benetnash/CV}
+	}
+}{Last update on \today}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -47,10 +51,6 @@ Room 212, Building 321, East Campus, USTC
 \\
 \noindent 3rd year undergraduate student
 \\
-\\
-\textsmaller{
-	Electronic Edition can be found at \href{https://github.com/Alkaid-Benetnash/CV}{https://github.com/Alkaid-Benetnash/CV}
-}
 \spacedhrule{0.8em}{-0.8em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Education}
@@ -133,8 +133,7 @@ Room 212, Building 321, East Campus, USTC
 	{Jul.\apo 2015 -- present}
 	{\bodytext{
 			\begin{itemize}
-				\item One of the biggest opensourse mirror in China, Official mirror site of Debian in China
-				\item More than 6TB traffic per day, Hundreds of http connection per second,  with an outdated machine
+				\item One of the biggest opensourse mirror in China.
 				\item Test and deploy several kinds of block cache, finally improve the disk IO capability more than twice
 				\item Deal with many kinds of performance or software/hardware issues
 			\end{itemize}
@@ -154,13 +153,26 @@ Room 212, Building 321, East Campus, USTC
 			\end{itemize}
 	}}
 }
+
+\headedsection
+{Pipeline MIPS CPU on FPGA}
+{\textsc{Univ. of Science and Tech. of China}} {%
+	\headedsubsection
+	{Course project of Computer Organization}
+	{May.\apo2016}
+	{\bodytext{
+			\begin{itemize}
+				\item Implemented in Verilog, 5 stage pipeline, 40 instructions, exception support.
+			\end{itemize}
+	}}
+}
 \spacedhrule{0.5em}{-0.8em}
 
 \roottitle{Extracurricular Activities}
 
 \headedsubsection
 {President, Linux User Group, USTC}
-{May.\apo2016 -- present}
+{May.\apo2016 -- June.\apo2017}
 {}
 \headedsubsection
 {Vice President, Linux User Group, USTC}
@@ -176,12 +188,9 @@ Room 212, Building 321, East Campus, USTC
 
 \roottitle{Skills}
 
-\inlineheadsection{Programming:}{C, C++, Python, Matlab, Bash}
+\inlineheadsection{Programming:}{C/C++, Python, Matlab, Bash, Verilog}
 \inlineheadsection{Linux:}{Network management, Server maintaining}
 \inlineheadsection{Github:}{\href{https://github.com/Alkaid-Benetnash}{https://github.com/Alkaid-Benetnash}}
-\inlineheadsection{Gitlab:}{\href{https://git.ustclug.org/Alkaid}{https://git.ustclug.org/Alkaid}}
-
-
 
 \end{document}
 
