@@ -149,6 +149,13 @@
 % subheaderrow command, used for a new position
 \newcommand{\headedsubsection}[3]{\nopagebreak[4]\begin{indentsection}\item[]\textbf{#1}\hfill\emph{#2}#3\end{indentsection}\nopagebreak[4]}
 
+% normal bodytext, left is title, right is date
+\newcommand{\timedentry}[2]{\nopagebreak[4]\begin{indentsection}\item[]#1\hfill\emph{#2}\end{indentsection}\nopagebreak[4]\vspace{-0.3em}}
+
+% for publication, #1 is title, #2 is author list, #3 is journal/conference
+\newcounter{PubCnt}
+\newcommand{\publication}[3]{\refstepcounter{PubCnt}\nopagebreak[4]\begin{indentsection}\item[][\arabic{PubCnt}]\textbf{#1}\begin{indentsection}\item[]\emph{#2}\\#3\end{indentsection}\end{indentsection}\nopagebreak[4]\vspace{-0.3em}}
+
 % body text (indented)
 %\newcommand{\bodytext}[1]{\nopagebreak[4]\begin{indentsection}\item[]#1\end{indentsection}\pagebreak[2]}
 

@@ -44,14 +44,13 @@
 % \sbull is a spaced bullet
 % \href well..
 % \\ breaks the line into a new paragraph
-\noindent\href{mailto:zgf574564920@gmail.com}{\mbox{zgf574564920@gmail.com}}\sbull
-\textsmaller{+}86.15656577795
+\noindent Email: \href{mailto:zgf574564920@gmail.com}{\mbox{zgf574564920@gmail.com}}, Phone: \textsmaller{+}86.15656577795
 \\
-Room 212, Building 321, East Campus, USTC
+Address: Room 212, Building 321, USTC, No.96, JinZhai Road, Hefei, Anhui, China.
 \\
-\noindent 3rd year undergraduate student
-\\
-\spacedhrule{0.8em}{-0.8em}  % a horizontal line with some vertical spacing before and after
+\noindent 4th year undergraduate student
+
+\spacedhrule{0.2em}{-1em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Education}
 
@@ -63,42 +62,28 @@ Room 212, Building 321, East Campus, USTC
 	{Sept.\apo2014 -- present}
 	{\bodytext {
 			\begin{itemize}
-				\item GPA 3.75/4.30
+				\item GPA 3.75/4.30, Rank 15/140
 				\item Enrolled in the Talent Program in Computer and Information Science and Technology
 			\end{itemize}
-	}}
-
-	\headedsubsection
-	{Awards}
-	{}
-	{\bodytext {
-			\begin{itemize}
-				\item {Outstanding Student Scholarship (Grade 2) in Sophomore Year}
-				\item {Outstanding Student Scholarship (Grade 3) in Junior Year}
-				\item {Outstanding Freshman Scholarship (Grade 3)}
-			\end{itemize}		
 	}}
 }
 
 
-\spacedhrule{0.5em}{-0.8em}
+\spacedhrule{0.2em}{-1em}
 
 \roottitle{Research Experience}
 \headedsection
-{System Group Intern}
+{System Group Intern, instructed by \href{https://www.microsoft.com/en-us/research/people/lintaoz/}{Lintao Zhang}}
 {\textsc{Microsoft Research Asia}}
 {
 	\headedsubsection
-	{Efficient and Scalable Total-Order Message Scattering in Datacenter Network}
+	{Efficient and Scalable Total-Order Message Scattering in Datacenter Network[\ref{pub:toms}]}
 	{Jul.\apo 2017 -- Oct.\apo 2017}
 	{\bodytext{
-			\hspace{1em}
-			{\small EuroSys'18 submitted. SOSP'17 Student Research Competition 2nd in Undergraduate Category.}
 			\begin{itemize}
 				\item Offload reordering and buffering to endhost: separate control plane from data plane
 				\item Minimax clock synchronization mechanism: low latency
-				\item Logical equivalent of endhosts and switches: provide incremental deploy ability
-				\item Readily deployable: programmable switches, commodity switches, endhosts only.
+\item Readily deployable: programmable switches, commodity switches, endhosts only
 			\end{itemize}
 	}}
 }
@@ -107,16 +92,27 @@ Room 212, Building 321, East Campus, USTC
 {\textsc{Univ. of Science and Tech. of China}}
 {
 	\headedsubsection
-	{Motion Planning for Soft Multi-Segment Manipulators in 3D Environment}
+	{Whole manipulator control in constrained environments[\ref{pub:softrobot}]}
 	{Dec.\apo 2016 -- Mar.\apo 2017}
 	{\bodytext{
 			\begin{itemize}
-				\item Extend traditional Jacobians method with new constraints suit for soft robot
+				\item Extend traditional Jacobians method with new constraints, take obstacle's information into account
+				\item Enable our softrobot work in environments with obstacles
 			\end{itemize}
 	}}
 }
 
-\spacedhrule{0.8em}{-0.8em}
+\spacedhrule{0.2em}{-1em}
+\roottitle{Publications}
+\publication
+	{Efficient and Scalable Total-Order Message Scattering in Datacenter Network\label{pub:toms}}
+	{Bojie Li, \textbf{Gefei Zuo}, WeiBai, Enhong Chen, Lintao Zhang}
+	{Submitted to EuroSys'18}
+\publication
+	{Whole manipulator control in constrained environments\label{pub:softrobot}}
+	{Dengyuan Wang, Xiaotong Chen, \textbf{Gefei Zuo}, Xinghua Liu, Zhanchi Wang, Hao Jiang and Xiaoping Chen}
+	{Submitted to ICRA'18}
+\spacedhrule{0.5em}{-1em}
 
 \roottitle{Work Experience}
 
@@ -143,7 +139,7 @@ Room 212, Building 321, East Campus, USTC
 	{\bodytext{
 			\begin{itemize}
 				\item One of the biggest opensourse mirror in China.
-				\item Test and deploy several kinds of block cache, finally improve the disk IO capability more than twice
+%				\item Test and deploy several kinds of block cache, finally improve the disk IO capability more than twice
 				\item Deal with many kinds of performance or software/hardware issues
 			\end{itemize}
 		}}
@@ -175,32 +171,31 @@ Room 212, Building 321, East Campus, USTC
 			\end{itemize}
 	}}
 }
-\spacedhrule{0.5em}{-0.8em}
+
+\spacedhrule{0em}{-1em}
+
+\roottitle{Awards}
+\timedentry{SOSP'17 Student Research Competition (Undergraduate Category) silver medal}{Oct.\apo2017}
+\timedentry{USTC Outstanding Student Scholarship (Grade 2)}{2016, 2017}
+
+\spacedhrule{0.2em}{-1em}
 
 \roottitle{Extracurricular Activities}
 
-\headedsubsection
-{President, Linux User Group, USTC}
-{May.\apo2016 -- June.\apo2017}
-{}
-\headedsubsection
-{Vice President, Linux User Group, USTC}
-{May.\apo2015 -- May.\apo2016}
-{}
+\timedentry{President, Linux User Group, USTC}{May.\apo2016 -- June.\apo2017}
+\timedentry{Vice President, Linux User Group, USTC}{May.\apo2015 -- May.\apo2016}
+\timedentry{Vice Minister, Technology team, Student Union, School of Gifted Young}{Sept.\apo2015 -- May.\apo2016}
 
-\headedsubsection
-{Vice Minister, Technology team, Student Union, School of Gifted Young}
-{Sept.\apo2015 -- May.\apo2016}
-{}
-
-\spacedhrule{0.5em}{-0.8em}
+\spacedhrule{0.2em}{-1em}
 
 \roottitle{Skills}
-
-\inlineheadsection{Programming:}{C/C++, Python, Matlab, Bash, Verilog}
-\inlineheadsection{Linux:}{Network management, Server maintaining}
-\inlineheadsection{Github:}{\href{https://github.com/Alkaid-Benetnash}{https://github.com/Alkaid-Benetnash}}
+\timedentry{\textbf{Programming:} C/C++, Python, Matlab, Bash, Verilog
+}{}
+\timedentry{\textbf{Linux:} Network management, Server maintaining}{}
+\timedentry{\textbf{Github:} \href{https://github.com/Alkaid-Benetnash}{https://github.com/Alkaid-Benetnash}
+}{}
+%\inlineheadsection{Programming:}{C/C++, Python, Matlab, Bash, Verilog}
+%\inlineheadsection{Linux:}{Network management, Server maintaining}
+%\inlineheadsection{Github:}{\href{https://github.com/Alkaid-Benetnash}{https://github.com/Alkaid-Benetnash}}
 
 \end{document}
-
-＀
