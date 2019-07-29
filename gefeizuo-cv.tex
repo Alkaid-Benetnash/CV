@@ -24,7 +24,7 @@
 \usepackage{resume}
 
 
-
+\newcommand{\seperator}{\spacedhrule{0.5em}{-1em}}
 
 \begin{document}  % begin the content of the document
 \sloppy  % this to relax whitespacing in favour of straight margins
@@ -32,9 +32,6 @@
 
 % title on top of the document
 \maintitle{Gefei Zuo}{
-	\textsmaller{
-		Downloadable at \href{https://github.com/Alkaid-Benetnash/CV}{https://github.com/Alkaid-Benetnash/CV}
-	}
 }{Last update on \today}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
@@ -48,21 +45,25 @@
 \\
 Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, MI 48109
 
-\spacedhrule{0.2em}{-1em}  % a horizontal line with some vertical spacing before and after
+\seperator  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Education}
 \headedsection
 {\href{https://umich.edu}{University of Michigan}}
-{\textit{Sept.\apo 2018 -- present}}
+{\textit{Sep.2018 -- present}}
 {
 	\headedsubsection
-	{Ph.D. student in Computer Science and Engineering, advised by Prof. \href{https://web.eecs.umich.edu/~barisk/}{Baris Kasikci}}
+	{Ph.D. student in Computer Science and Engineering}
 	{}
-	{}
+	{\bodytext{
+			\begin{itemize}
+				\item GPA 3.89/4.00
+			\end{itemize}
+	}}
 }
 \headedsection  % sets the header for the section and includes any subsections
 {\href{http://ustc.edu.cn/}{University of Science and Technology of China (USTC)}}
-{\textit{Sept.\apo 2014 -- June.\apo 2018}} {
+{\textit{Sep.2014 -- Jun.2018}} {
 	\headedsubsection
 	{B.E. in Computer Science, in the Special Class for the Gifted Young (SCGY)}
 	{}
@@ -74,20 +75,45 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 	}}
 }
 
-\spacedhrule{0.2em}{-1em}
+\seperator
 
 \roottitle{Research Experience}
+
+\headedsection
+{Graduate Student Research Assistant, advised by Prof.\href{https://web.eecs.umich.edu/~barisk/}{\ Baris Kasikci}}
+{\textsc{University of Michigan}}
+{
+	\headedsubsection
+	{Hardware-assisted Debugging}
+	{May.2019 -- present}
+	{\bodytext{\small
+			Find the tradeoff between record \& replay (online, heavyweight) and symbolic execution (offline, computation intensive)
+	}}
+	\headedsubsection
+	{NVM File-Indexing Structures Analysis}
+	{Dec.2018 -- present}
+	{\bodytext{\small
+			Analyse the impact of file-indexing structures on current NVM filesystems.
+	}}
+	\headedsubsection
+	{Hypervisor for Shared-Memory FPGA Platforms}
+	{Oct.2018 -- present}
+	{\bodytext{\small
+			A virtualization solution for emerging FPGA platforms. It enables processes in guest VM share the same view of virtual memory to circuits on FPGA.
+	}}
+}
+
 \headedsection
 {System Group Intern, instructed by \href{https://www.microsoft.com/en-us/research/people/lintaoz/}{Lintao Zhang}}
 {\textsc{Microsoft Research Asia}}
 {
 	\headedsubsection
 	{Efficient and Scalable Total-Order Message Scattering in Datacenter Network[\ref{pub:toms}]}
-	{Jul.\apo 2017 -- Oct.\apo 2017}
-	{\bodytext{
+	{Jul.2017 -- Oct.2017}
+	{\bodytext{\small
 			\begin{itemize}
 				\item Offload reordering and buffering to endhost: separate control plane from data plane.
-				\item Readily deployable: programmable switches, commodity switches, endhosts only.
+				\item Readily deployable: applicable to programmable switches, commodity switches or endhosts only.
 				\item Accelerate distributed transactional processing by 10X with little overhead.
 			\end{itemize}
 	}}
@@ -98,8 +124,8 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 {
 	\headedsubsection
 	{Whole manipulator control in constrained environments[\ref{pub:softrobot}]}
-	{Dec.\apo 2016 -- Mar.\apo 2017}
-	{\bodytext{
+	{Dec.2016 -- Mar.2017}
+	{\bodytext{\small
 			\begin{itemize}
 				\item Extend traditional Jacobians method with new constraints, take obstacle's information into account.
 				\item Enable our softrobot work in environments with obstacles.
@@ -107,17 +133,18 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 	}}
 }
 
-\spacedhrule{0.2em}{-1em}
+\seperator
 \roottitle{Publications}
 \publication
-	{Efficient and Scalable Total-Order Message Scattering in Datacenter Network\label{pub:toms}}
-	{Bojie Li, \textbf{Gefei Zuo}, Wei Bai, Enhong Chen, Lintao Zhang}
-	{In submission}
+	{Near-Optimal Total Order Message Scattering in Data Center Networks\label{pub:toms}}
+	{\textbf{Gefei Zuo}}
+	{SOSP'17 Student Research Competition}
 \publication
-	{Whole manipulator control in constrained environments\label{pub:softro bot}}
+	{Whole manipulator control in constrained environments\label{pub:softrobot}}
 	{Dengyuan Wang, Xiaotong Chen, \textbf{Gefei Zuo}, Xinghua Liu, Zhanchi Wang, Hao Jiang and Xiaoping Chen}
-	{Published on RiTA 2017}
-\spacedhrule{0.5em}{-1em}
+	{RiTA 2017}
+
+\seperator
 
 \roottitle{Project Experience}
 
@@ -126,7 +153,7 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 {\textsc{Univ. of Science and Tech. of China}} {
 	\headedsubsection
 	{Maintainer}
-	{Sept.\apo 2014 -- Jul.\apo 2017}
+	{Sep.2014 -- Jul.2017}
 	{\bodytext{
 			\begin{itemize}
 				\item An IaaS service for students to learn and use Linux, supporting various Linux distributions.
@@ -140,7 +167,7 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 {\textsc{Univ. of Science and Tech. of China}} {%
 	\headedsubsection
 	{Maintainer}
-	{Jul.\apo 2015 -- Mar.\apo 2017}
+	{Jul.2015 -- Mar.2017}
 	{\bodytext{
 			\begin{itemize}
 				\item It is one of the largest open-source software mirrors in China.
@@ -151,40 +178,17 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 		}}
 	}
 
-\headedsection  % sets the header for the section and includes any subsections
-{\href{https://github.com/zzh1996/distributed-file-storage}{Distributed File Storage}}
-{\textsc{Univ. of Science and Tech. of China}} {%
-	\headedsubsection
-	{Team project of Principles and Design of Operating Systems}
-	{Mar.\apo 2016 -- Jun.\apo 2016}
-	{\bodytext{
-			\begin{itemize}
-				\item Implement git-like(content hash as index) file/directory indexing API for web frontend.
-				\item Design and Implement synchronize operation based on concept of blockchain.
-			\end{itemize}
-	}}
-}
-
-\spacedhrule{0em}{-1em}
+\seperator
 
 \roottitle{Honors and Awards}
-\timedentry{SOSP'17 Student Research Competition (Undergraduate Category), the Second Place}{Oct.\apo2017}
+\timedentry{SOSP'17 Student Research Competition (Undergraduate Category), the Second Place}{Oct.2017}
 \timedentry{USTC Outstanding Student Scholarship (Grade 2)}{2016, 2017}
 
-\spacedhrule{0.2em}{-1em}
-
-\roottitle{Extracurricular Activities}
-
-\timedentry{President, Linux User Group, USTC}{May.\apo2016 -- June.\apo2017}
-\timedentry{Vice President, Linux User Group, USTC}{May.\apo2015 -- May.\apo2016}
-\timedentry{Vice Minister, Technology team, Student Union, SCGY}{Sept.\apo2015 -- May.\apo2016}
-
-\spacedhrule{0.2em}{-1em}
+\seperator
 
 \roottitle{Skills}
 \timedentry{\textbf{Programming:} C/C++, Python, Matlab, Bash, Verilog
 }{}
-\timedentry{\textbf{Linux:} Network management, Server maintenance}{}
 \timedentry{\textbf{Github:} \href{https://github.com/Alkaid-Benetnash}{https://github.com/Alkaid-Benetnash}
 }{}
 %\inlineheadsection{Programming:}{C/C++, Python, Matlab, Bash, Verilog}
