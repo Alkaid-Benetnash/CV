@@ -87,19 +87,19 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 	{Hardware-assisted Debugging}
 	{May.2019 -- present}
 	{\bodytext{\small
-			Combine record \& replay (online, heavyweight) and symbolic execution (offline, computation intensive) to recover execution history before a certain crash.
+			Combine record \& replay (online, heavyweight) and symbolic execution (offline, computation intensive) to recover execution history from crash reports.
 	}}
 	\headedsubsection
 	{NVM File-Indexing Structures Analysis}
 	{Dec.2018 -- present}
 	{\bodytext{\small
-			Analyse the impact of file-indexing structures on current NVM filesystems.
+			Current NVM file systems mainly reuse file-indexing structures designed with decades-old assumptions. We should rethink the design space with NVM's unique properties in mind.
 	}}
 	\headedsubsection
-	{Hypervisor for Shared-Memory FPGA Platforms}
+	{Hypervisor for Shared-Memory FPGA Platforms[\ref{pub:optimus}]}
 	{Oct.2018 -- present}
 	{\bodytext{\small
-			A virtualization solution for emerging FPGA platforms. It enables processes in guest VM share the same view of virtual memory to circuits on FPGA.
+			A virtualization solution for emerging FPGA platforms. It enables processes in guest VM to share the same view of virtual memory to circuits on FPGA.
 	}}
 }
 
@@ -134,6 +134,10 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 
 \seperator
 \roottitle{Publications}
+\publication
+  {A Hypervisor for Shared-Memory FPGA Platforms\label{pub:optimus}}
+  {\small Jiacheng Ma, \textbf{Gefei Zuo}, Kevin Loughlin, Xiaohe Cheng, YanqiangLiu, Abel Mulugeta Eneyew, Zhengwei Qi, and Baris Kasikci}
+  {Appearing at ASPLOS'20}
 \publication
 	{Near-Optimal Total Order Message Scattering in Data Center Networks\label{pub:toms}}
 	{\textbf{Gefei Zuo}}
@@ -171,8 +175,6 @@ Address: 2753, Bob and Betty Beyster Building, 2260 Hayward Street, Ann Arbor, M
 			\begin{itemize}
 				\item It is one of the largest open-source software mirrors in China.
 				\item It hosts 25 TiB+ content and generates 10 TiB+ network traffic per day.
-%				\item Test and deploy several kinds of block cache, finally improve the disk IO capability more than twice
-				\item Deal with many kinds of performance or software/hardware issues.
 			\end{itemize}
 		}}
 	}
